@@ -1,0 +1,20 @@
+t=[0:10];
+y1=rand(t);
+subplot(3,1,1);
+plot2d3(t,y1);
+xlabel('Time');
+ylabel('Amplitude');
+title('1st Random Signal');
+y2=rand(t);
+subplot(3,1,2);
+plot2d3(t,y2);
+xlabel('Time');
+ylabel('Amplitude');
+title('2nd Random Signal');
+y=y1.*y2;
+subplot(3,1,3);
+plot2d3(t,y);
+xlabel('Time');
+ylabel('Amplitude');
+title('Multiplied Random Signal');
+
